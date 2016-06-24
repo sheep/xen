@@ -70,6 +70,7 @@ addons:
             - gcc-5
             - g++-5
             - seabios
+            - libusb-dev
 # we must set CXX manually instead of using 'language: cpp' due to
 # travis-ci/travis-ci#3871
 before_script:
@@ -78,6 +79,7 @@ before_script:
 script:
     - ./scripts/travis-build
 after_script:
+    - cat tools/qemu-xen-dir/config.log
     - cat xen/.config
     - cat tools/config.log
     - cat docs/config.log

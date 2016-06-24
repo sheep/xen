@@ -15,6 +15,7 @@ cfgargs+=("--disable-stubdom") # more work needed into building this
 cfgargs+=("--disable-rombios")
 cfgargs+=("--enable-docs")
 cfgargs+=("--with-system-seabios=/usr/share/seabios/bios.bin")
+cfgargs+=("--with-extra-qemuu-configure-args='--enable-libusb'")
 
 if [[ "${XEN_TARGET_ARCH}" == "x86_64" ]]; then
     cfgargs+=("--enable-tools")
