@@ -47,6 +47,7 @@
 #include <sys/socket.h>
 #include <sys/file.h>
 #include <sys/ioctl.h>
+#include <sys/sysmacros.h>
 
 #include <xenevtchn.h>
 #include <xenstore.h>

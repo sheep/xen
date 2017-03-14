@@ -36,6 +36,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/ioctl.h>
+#include <sys/sysmacros.h>
 #include <linux/major.h>
 
 #include "tap-ctl.h"
